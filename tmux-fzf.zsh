@@ -11,7 +11,7 @@ tmux-fzf-switch() {
         return
     elif [ "$selected" = "$create_session_msg" ]; then
         # create a new session
-        session_name="$((random-word 2>/dev/null || echo "$RANDOM") | sed -E $'s/[:. \'"]/-/g')"
+        session_name="$((shuf -n1 /usr/share/dict/words 2>/dev/null || echo "$RANDOM") | sed -E $'s/[:. \'"]/-/g')"
         tmux new-session -d -s "$session_name" || return 1
     fi
 
