@@ -36,8 +36,7 @@ _tmux-fzf() {
             _values 'commands' \
                 'switch' \
                 'kill' \
-                'help' \
-                'version'
+                'help'
             ;;
         *)
             local cmd="$words[2]"

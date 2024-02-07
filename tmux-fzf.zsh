@@ -57,12 +57,7 @@ tmux-fzf-help() {
 commands:
     switch  sw                  switch sessions (default)
     kill  k                     kill sessions
-    help  h  --help  -h         display help message
-    version  --version  -v  -V  display tmux version'
-}
-
-tmux-fzf-version() {
-    tmux -V
+    help  h  --help  -h         display help message'
 }
 
 tmux-fzf() {
@@ -75,9 +70,6 @@ tmux-fzf() {
             ;;
         help|h|--help|-h)
             tmux-fzf-help "${@:2}"
-            ;;
-        version|--version|-v|-V)
-            tmux-fzf-version "${@:2}"
             ;;
        *)
             tmux-fzf-switch "$@"
