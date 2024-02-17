@@ -55,9 +55,9 @@ tmux-fzf-help() {
 'tmux-fzf [cmd] ...
 
 commands:
-    switch  sw                  switch sessions (default)
-    kill  k                     kill sessions
-    help  h  --help  -h         display help message'
+    switch  sw            switch sessions (default)
+    kill  k               kill sessions
+    help  h  --help  -h   display help message'
 }
 
 tmux-fzf() {

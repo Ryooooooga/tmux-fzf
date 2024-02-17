@@ -8,10 +8,9 @@ Simple tmux session manager
 tmux-fzf [cmd] ...
 
 commands:
-    switch  sw                  switch sessions (default)
-    kill  k                     kill sessions
-    help  h  --help  -h         display help message
-    version  --version  -v  -V  display tmux version
+    switch  sw            switch sessions (default)
+    kill  k               kill sessions
+    help  h  --help  -h   display help message
 ```
 
 ## Requirements
